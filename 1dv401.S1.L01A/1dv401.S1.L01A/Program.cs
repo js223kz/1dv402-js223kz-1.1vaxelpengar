@@ -70,7 +70,6 @@ namespace dv401.S1.L01A
 				}
 			}
 
-			//Code below concerns the receipt
 			changeToGiveBack = receivedSum - totalSumWithoutDecimal;
 
 			Console.WriteLine ("\n\n" + "KVITTO"); 
@@ -82,7 +81,6 @@ namespace dv401.S1.L01A
 			Console.WriteLine ("{0,-16}{1,-2}{2,15:f2}{3,3}", "Tillbaka", ":", changeToGiveBack, "kr");
 			Console.WriteLine ("------------------------------------");
 
-			//Code below concerns calculation of change to give back
 			int numberOfFivehundreds = 500;
 			int numberOfHundreds = 100;
 			int numberOfFifties = 50;
@@ -148,8 +146,6 @@ namespace dv401.S1.L01A
 				valueLeftToCalculate = valueLeftToCalculate % numberOfOnes;
 				Console.WriteLine ("{0,-16}{1,-2}{2,-7}", "1-kronor", ":", valueOfChangeToGiveBack);
 			}
-
-
 		}
 	}
 }
